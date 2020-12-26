@@ -1,0 +1,252 @@
+{
+    "editor.wordWrap": "on",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "python.autoComplete.addBrackets": true,
+    "python.linting.flake8Enabled": true,
+    "python.autoComplete.extraPaths": [
+        "C:/Program Files (x86)/Google/google_appengine",
+        "C:/Program Files (x86)/Google/google_appengine/lib/flask-0.12"
+    ],
+    "files.autoSave": "afterDelay",
+    "xml.java.home": "C:\\Program Files\\Java\\jdk-10.0.2",
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "python.pythonPath": "C:\\Users\\99676\\Anaconda3\\python.exe",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    // "terminal.integrated.shellArgs.windows": [
+    //     "/K",
+    //     "C:\\Users\\99676\\Anaconda3\\Scripts\\activate.bat C:\\Users\\99676\\Anaconda3
+    // ],
+    "java.home": "C:\\Program Files\\RedHat\\java-14-openjdk-14.0.2-1",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "window.zoomLevel": 2,
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.associations": {
+        "*.html": "html",
+        "*.py": "python"
+    },
+    "pasteImage.path": "${projectRoot}/static/",
+    "pasteImage.basePath": "${projectRoot}",
+    "pasteImage.forceUnixStyleSeparator": true,
+    "pasteImage.prefix": "/",
+    "editor.suggestSelection": "first",
+    "editor.fontLigatures": true,
+    "editor.letterSpacing": 0.5,
+    "editor.fontWeight": "400", // Regular
+    "editor.lineHeight": 22,
+    "editor.fontFamily": "'CaskaydiaCove NF', '微软雅黑'",
+    "[python]": {},
+    "java.semanticHighlighting.enabled": true,
+    "python.languageServer": "Microsoft",
+    "java.debug.settings.exceptionBreakpoint.skipClasses": [],
+    "java.configuration.runtimes": [],
+    "terminal.explorerKind": "external",
+    "python.terminal.launchArgs": [],
+    "editor.quickSuggestions": true,
+    "[cpp]": {
+        "editor.quickSuggestions": true
+    },
+    "[c]": {
+        "editor.quickSuggestions": true
+    },
+    "leetcode.endpoint": "leetcode",
+    "leetcode.workspaceFolder": "c:\\Workspace\\leetcode",
+    "leetcode.defaultLanguage": "java",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.hint.commandShortcut": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "css.remoteStyleSheets": [],
+    "background.enabled": false,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "smartsemicolon.enable": true,
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "C_Cpp.default.cStandard": "c99",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "autoimport.showNotifications": true,
+    "smartsemicolon.autoLineChange": true,
+    "cmake.configureOnOpen": false,
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.default.cppStandard": "c++11",
+    "editor.largeFileOptimizations": false,
+    "markdown.extension.toc.unorderedList.marker": "*",
+    "terminal.integrated.rendererType": "dom",
+    "vscode_vibrancy.imports": [
+        "$theme-style$"
+    ],
+    "vscode_vibrancy.theme": "Default Dark",
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.alwaysTrustNotebooks": true,
+    "jupyter.askForKernelRestart": false,
+    "workbench.colorTheme": "Slack Theme Protanopia & Deuteranopia",
+    "vscode_vibrancy.opacity": 0.75,
+    "vscode_vibrancy.type": "acrylic",
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "background.filepath": "c:\\Users\\99676\\Desktop\\收录\\Shizuka-P2-Portrait.png",
+    "background.opacity": 0.8,
+    "background.alignment": "Center Left",
+    // vscvim key-remap
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "Q"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "Y"
+            ],
+            "after": [
+                "y",
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "5",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "5",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "W"
+            ],
+            "after": [
+                "5",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "B"
+            ],
+            "after": [
+                "5",
+                "b"
+            ]
+        },
+        {
+            "before": [
+                "E"
+            ],
+            "after": [
+                "5",
+                "e"
+            ]
+        },
+        {
+            "before": [
+                "N"
+            ],
+            "after": [
+                "0"
+            ]
+        },
+        {
+            "before": [
+                "I"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "n"
+            ],
+            "after": [
+                "e"
+            ]
+        },
+        {
+            // move current word to the end of the line.
+            "before": [
+                "m",
+                "e"
+            ],
+            "after": [
+                "<Esc>",
+                "d",
+                "i",
+                "w",
+                "$",
+                "p"
+            ]
+        },
+        {
+            // find parentheses pattern
+            "before": [
+                "f"
+            ],
+            "after": [
+                "%"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            //    copy to the system clipboard (in visual mode)
+            "before": [
+                "Y"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y"
+            ]
+        },
+    ],
+    "vim.handleKeys": {
+        "s": false
+    },
+    // vim-airline like
+    "workbench.statusBar.visible": true,
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        "#85abf8",
+        "#ffffff"
+    ],
+    "vim.statusBarColors.insert": "#98C379",
+    "vim.statusBarColors.visual": "#fc5d83",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#85abf8",
+        "statusBar.noFolderBackground": "#85abf8",
+        "statusBar.debuggingBackground": "#85abf8",
+        "statusBar.foreground": "#ffffff"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
