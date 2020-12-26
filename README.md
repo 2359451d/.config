@@ -7,12 +7,12 @@
 
 ## KeyMAP
 
-vscvim
+:keyboard: vscvim
 
 REMAP | Ori | Func
 ---------|----------|---------
  Q | :q | close current editor in group
- Y | y$ | copy to the system clipboard(visual mode) & yank-like(nomal mode) 
+ Y | y$ | copy to the system clipboard(visual mode) & yank-like(nomal mode)
  K | 5k | move 5 steps back
  J | 5j | move 5 steps forward
  W | 5w | quick move inline
@@ -24,8 +24,22 @@ REMAP | Ori | Func
  me| `<Esc>`diw$p|move current word to the end of the line
 f | % | pattern match
 Z | `<Esc>` | escape
+gc | gcc | quick comment
+ga | `shift+alt+A` | quick toggle block comment, `shift+alt+A` still active
+ca | `ctrl+;` | quick insert semicolon(normal mode) at the end
+ds | `ctrl+shift+;` | quick remove semicolon(normal mode) at the end
+, | - | quick add `,` after current char
 
-vsc
+:keyboard: ezmotion ([ref](https://github.com/VSCodeVim/Vim))
+
+`<LEADER>` - blankspace (` `)
+
+REMAP | Ori | Func
+---------|----------|---------
+ `<LEADER>s` | `<LEADER><LEADER>s` | search 1 char globally
+ ... | ... | ...
+
+:keyboard: vsc
 
 REMAP | Action
 ---------|----------
@@ -34,3 +48,28 @@ ctrl+M ctrl+I | move to the right group
 ctrl+M ctrl+J | move to the next editor
 ctrl+M ctrl+K | move to the previous editor
 ctrl+shift+b | workbench.action.toggleSidebarVisibility
+ctrl+alt+c | markdown.extension.toc.create
+ctrl+alt+t | md-shortcut.addTable
+
+:keyboard: [surround ref](https://github.com/tpope/vim-surround)
+
+---
+
+:scissors: surrounding test text
+
+(hello world)
+'hello world'
+`hello world`
+<hello world>
+$hello wolrd$
+【hello world】
+[hello world]
+*hello world*
+**hello world**
+~~hello world~~
+##hello world##
+hello world
+
+<p class="important">
+<em>Hello</em> World!
+</p>
