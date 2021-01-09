@@ -23,12 +23,13 @@ REMAP | Ori | Func
  n | e  | move inline(to the end of the next word)
  me| `<Esc>`diw$p|move current word to the end of the line
 f | % | pattern match
-Z | `<Esc>` | escape
+CapsLock | `<Esc>` | escape, recommend press 2 times, avoiding incorrect Capital process
 gc | gcc | quick comment
 ga | `shift+alt+A` | quick toggle block comment, `shift+alt+A` still active
 ca | `ctrl+;` | quick insert semicolon(normal mode) at the end
-ds | `ctrl+shift+;` | quick remove semicolon(normal mode) at the end
+da | `ctrl+shift+;` | quick remove semicolon(normal mode) at the end
 , | - | quick add `,` after current char
+se | `<Esc>`,"b","v", "e" | **visual mode**, select current wordl
 
 :keyboard: ezmotion ([ref](https://github.com/VSCodeVim/Vim))
 
@@ -50,6 +51,9 @@ ctrl+M ctrl+K | move to the previous editor
 ctrl+shift+b | workbench.action.toggleSidebarVisibility
 ctrl+alt+c | markdown.extension.toc.create
 ctrl+alt+t | md-shortcut.addTable
+ctrl+k v | open enhance preview to the side
+[ | "editor.action.outdentLines"
+] | "editor.action.indentLines"
 
 :keyboard: [surround ref](https://github.com/tpope/vim-surround)
 
@@ -57,6 +61,7 @@ ctrl+alt+t | md-shortcut.addTable
 
 :scissors: surrounding test text
 
+{hello} world!
 (hello world)
 'hello world'
 `hello world`
