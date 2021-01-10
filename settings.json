@@ -86,7 +86,7 @@
     "jupyter.sendSelectionToInteractiveWindow": true,
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.askForKernelRestart": false,
-    "workbench.colorTheme": "Slack Theme Protanopia & Deuteranopia",
+    "workbench.colorTheme": "Slack Theme Hoth",
     "vscode_vibrancy.opacity": 0.75,
     "vscode_vibrancy.type": "acrylic",
     "[markdown]": {
@@ -98,115 +98,116 @@
     // vscvim key-remap
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": [
-                "Q"
-            ],
-            "commands": [
-                "workbench.action.closeActiveEditor"
-            ]
+            "before": [ "Q" ],
+            "commands": [ "workbench.action.closeActiveEditor" ]
         },
         {
-            "before": [
-                "Y"
-            ],
-            "after": [
-                "y",
-                "$"
-            ]
+            "before": [ "Y" ],
+            "after": [ "y", "$" ]
         },
         {
-            "before": [
-                "K"
-            ],
-            "after": [
-                "5",
-                "k"
-            ]
+            "before": [ "K" ],
+            "after": [ "5", "k" ]
         },
         {
-            "before": [
-                "J"
-            ],
-            "after": [
-                "5",
-                "j"
-            ]
+            "before": [ "J" ],
+            "after": [ "5", "j" ]
         },
         {
-            "before": [
-                "W"
-            ],
-            "after": [
-                "5",
-                "w"
-            ]
+            "before": [ "W" ],
+            "after": [ "5", "w" ]
         },
         {
-            "before": [
-                "B"
-            ],
-            "after": [
-                "5",
-                "b"
-            ]
+            "before": [ "B" ],
+            "after": [ "5", "b" ]
         },
         {
-            "before": [
-                "E"
-            ],
-            "after": [
-                "5",
-                "e"
-            ]
+            "before": [ "E" ],
+            "after": [ "5", "e" ]
         },
         {
-            "before": [
-                "N"
-            ],
-            "after": [
-                "0"
-            ]
+            "before": [ "N" ],
+            "after": [ "0" ]
         },
         {
-            "before": [
-                "I"
-            ],
-            "after": [
-                "$"
-            ]
+            "before": [ "I" ],
+            "after": [ "$" ]
         },
         {
-            "before": [
-                "n"
-            ],
-            "after": [
-                "e"
-            ]
+            "before": [ "n" ],
+            "after": [ "e" ]
         },
         {
             // move current word to the end of the line.
-            "before": [
-                "m",
-                "e"
+            "before": [ "m", "e"
             ],
-            "after": [
-                "<Esc>",
-                "d",
-                "i",
-                "w",
-                "$",
-                "p"
-            ]
+            "after": [ "<Esc>", "d", "i", "w", "$", "p" ]
         },
         {
             // find parentheses pattern
-            "before": [
-                "f"
-            ],
-            "after": [
-                "%"
+            "before": [ "f" ],
+            "after": [ "%" ]
+        },
+        {
+            // quick comment
+            "before":["g","c"],
+            "after":["g","c","c"]
+        },
+        {
+            // quick toggle block comment, shift+alt+A still active
+            "before":["g","a"],
+            "commands":[
+                "editor.action.blockComment"
             ]
-        }
+        },
+        {
+            // quick insert semicolon at the end, ctrl+; also active
+            "before":["c","a"],
+            "commands":[
+                "extension.insertSemiColon"
+            ]
+        },
+        {
+            // quick remove semicolon at the end, ctrl shift+; also active
+            "before":["d","a"],
+            "commands":[
+                "extension.removeSemiColon"
+            ]
+        },
+        {
+            // quick outdent lines
+            "before":["["],
+            "commands":["editor.action.outdentLines"],
+        },
+        {
+            // quick indent lines
+            "before":["]"],
+            "commands":["editor.action.indentLines"]
+        },
+        {
+            // quick add ','
+            "before":[","],
+            "after":["a",",","<Esc>"]
+        },
+        {
+            // disable (
+            "before":["("],
+            "after":[],
+        },
+        { // disable )
+            "before":[")"],
+            "after":[],
+        },
+        
+        /* 
+            eazy motion remapping
+        */
+        {
+           //search global
+           "before":["<LEADER>","s"],
+           "after":["<LEADER>","<LEADER>","s"] 
+        },
+
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
@@ -220,33 +221,57 @@
                 "y"
             ]
         },
+        {
+            // visualmode-select current word
+            "before": [
+                "s", "e"
+            ],
+            "after":[
+                "<Esc>","b","v", "e"
+            ]
+        }
     ],
     "vim.handleKeys": {
-        "s": false
+        "(": false,
+        ")":false,
     },
     // vim-airline like
     "workbench.statusBar.visible": true,
     "vim.statusBarColorControl": true,
     "vim.statusBarColors.normal": [
-        "#85abf8",
-        "#ffffff"
+        "#a9d6fc",
+        "#484b53"
     ],
     "vim.statusBarColors.insert": "#98C379",
     "vim.statusBarColors.visual": "#fc5d83",
     "vim.statusBarColors.visualline": "#B48EAD",
     "vim.statusBarColors.visualblock": "#A3BE8C",
     "vim.statusBarColors.replace": "#D08770",
-    "vim.statusBarColors.commandlineinprogress": "#007ACC",
-    "vim.statusBarColors.searchinprogressmode": "#007ACC",
-    "vim.statusBarColors.easymotionmode": "#007ACC",
-    "vim.statusBarColors.easymotioninputmode": "#007ACC",
-    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "vim.statusBarColors.commandlineinprogress": "#6bffdd",
+    "vim.statusBarColors.searchinprogressmode": "#c4cdff",
+    "vim.statusBarColors.easymotionmode": "#f9f333",
+    "vim.statusBarColors.easymotioninputmode": "#f4f081",
+    "vim.statusBarColors.surroundinputmode": "#6bffdd",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#85abf8",
-        "statusBar.noFolderBackground": "#85abf8",
-        "statusBar.debuggingBackground": "#85abf8",
-        "statusBar.foreground": "#ffffff"
+        "statusBar.background": "#a9d6fc",
+        "statusBar.noFolderBackground": "#a9d6fc",
+        "statusBar.debuggingBackground": "#a9d6fc",
+        "statusBar.foreground": "#484b53"
     },
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // set <LEADER> to blankspace
+    "vim.leader":" ",
+     "vim.easymotion": true,
+
+     /*
+        auto switch input method
+     */
+     "vim.autoSwitchInputMethod.enable": true,
+    "vim.autoSwitchInputMethod.defaultIM": "2052",
+    "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\Users\\99676\\Desktop\\study2020\\self-study\\vim\\im-select.exe",
+    "vim.autoSwitchInputMethod.switchIMCmd": "C:\\Users\\99676\\Desktop\\study2020\\self-study\\vim\\im-select.exe {im}",
+    "markdownShortcuts.italics.marker": "*",
+    "background.size": "cover"
 }
