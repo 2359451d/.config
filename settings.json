@@ -135,7 +135,7 @@
         },
         {
             "before": [ "n" ],
-            "after": [ "e" ]
+            "after": [ "b" ]
         },
         {
             // move current word to the end of the line.
@@ -177,7 +177,7 @@
         {
             // quick outdent lines
             "before":["["],
-            "commands":["editor.action.outdentLines"],
+            "commands":["editor.action.outdentLines"]
         },
         {
             // quick indent lines
@@ -192,11 +192,11 @@
         {
             // disable (
             "before":["("],
-            "after":[],
+            "after":[]
         },
         { // disable )
             "before":[")"],
-            "after":[],
+            "after":[]
         },
         
         /* 
@@ -206,7 +206,7 @@
            //search global
            "before":["<LEADER>","s"],
            "after":["<LEADER>","<LEADER>","s"] 
-        },
+        }
 
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
@@ -229,19 +229,64 @@
             "after":[
                 "<Esc>","b","v", "e"
             ]
+        },
+        {
+            // n to move back to the start of the last word
+            "before" :[
+                "n"
+            ],
+            "after":[
+                "b"
+            ]
+        },
+        {
+            // select till the end, equally to v0
+            "before":[
+                "N"
+            ],
+            "after":[
+                "0"
+            ]
+        },
+        {
+            // select till the start, equally to v$
+            "before":[
+                "I"
+            ],
+            "after":[
+                "$"
+            ]
+        },
+        {
+            // markdown - set bold
+            "before":[
+                "s","b"
+            ],
+            "commands":[
+                "md-shortcut.toggleBold"
+            ],
+            "after":[
+                "<Esc>"
+            ]
+        },
+        {
+            // markdown - set italics
+            "before":[
+                "s","i"
+            ],
+            "commands":[
+                "markdown.extension.editing.toggleItalic"
+            ],
+            "after":[
+                "<Esc>"
+            ]
         }
+
     ],
     "vim.handleKeys": {
-        "(": false,
-        ")":false,
-    },
+        "(": false, ")":false },
     // vim-airline like
     "workbench.statusBar.visible": true,
-    "vim.statusBarColorControl": true,
-    "vim.statusBarColors.normal": [
-        "#a9d6fc",
-        "#484b53"
-    ],
     "vim.statusBarColors.insert": "#98C379",
     "vim.statusBarColors.visual": "#fc5d83",
     "vim.statusBarColors.visualline": "#B48EAD",

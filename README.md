@@ -20,7 +20,7 @@ REMAP | Ori | Func
  E | 5e | quick move inline
  N | 0  | move to the start
  I | $  | move to the end
- n | e  | move inline(to the end of the next word)
+ n | b  | move inline(to the start of the last word)
  me| `<Esc>`diw$p|move current word to the end of the line
 f | % | pattern match
 CapsLock | `<Esc>` | escape, recommend press 2 times, avoiding incorrect Capital process
@@ -30,6 +30,9 @@ ca | `ctrl+;` | quick insert semicolon(normal mode) at the end
 da | `ctrl+shift+;` | quick remove semicolon(normal mode) at the end
 , | - | quick add `,` after current char
 se | `<Esc>`,"b","v", "e" | **visual mode**, select current wordl
+sb | - | **visual mode**, toggle markdown set bold
+si | - | **visual mode**, toggle markdown set italics
+
 
 :keyboard: ezmotion ([ref](https://github.com/VSCodeVim/Vim))
 
