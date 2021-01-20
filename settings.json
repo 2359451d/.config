@@ -92,9 +92,9 @@
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "background.filepath": "c:\\Users\\99676\\Desktop\\收录\\Shizuka-P2-Portrait.png",
-    "background.opacity": 0.8,
-    "background.alignment": "Center Left",
+    "background.filepath": "c:\\Users\\99676\\Desktop\\收录\\75820325_p0.jpg",
+    "background.opacity": 0.9,
+    "background.alignment": "Center Right",
     // vscvim key-remap
     "vim.normalModeKeyBindingsNonRecursive": [
         {
@@ -177,7 +177,7 @@
         {
             // quick outdent lines
             "before":["["],
-            "commands":["editor.action.outdentLines"]
+            "commands":["editor.action.outdentLines"],
         },
         {
             // quick indent lines
@@ -190,13 +190,17 @@
             "after":["a",",","<Esc>"]
         },
         {
+            "before":["`"],
+            "after":["~"]
+        },
+        {
             // disable (
             "before":["("],
-            "after":[]
+            "after":[],
         },
         { // disable )
             "before":[")"],
-            "after":[]
+            "after":[],
         },
         
         /* 
@@ -206,7 +210,7 @@
            //search global
            "before":["<LEADER>","s"],
            "after":["<LEADER>","<LEADER>","s"] 
-        }
+        },
 
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
@@ -284,13 +288,15 @@
 
     ],
     "vim.handleKeys": {
-        "(": false, ")":false },
+        "(": false, ")":false, },
     // vim-airline like
     "workbench.statusBar.visible": true,
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": "#a9d6fc",
     "vim.statusBarColors.insert": "#98C379",
     "vim.statusBarColors.visual": "#fc5d83",
-    "vim.statusBarColors.visualline": "#B48EAD",
-    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.visualline": "#b48EAD",
+    "vim.statusBarColors.visualblock": "#a3BE8C",
     "vim.statusBarColors.replace": "#D08770",
     "vim.statusBarColors.commandlineinprogress": "#6bffdd",
     "vim.statusBarColors.searchinprogressmode": "#c4cdff",
@@ -298,9 +304,9 @@
     "vim.statusBarColors.easymotioninputmode": "#f4f081",
     "vim.statusBarColors.surroundinputmode": "#6bffdd",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#a9d6fc",
-        "statusBar.noFolderBackground": "#a9d6fc",
-        "statusBar.debuggingBackground": "#a9d6fc",
+        "statusBar.background": "#98C379",
+        "statusBar.noFolderBackground": "#98C379",
+        "statusBar.debuggingBackground": "#98C379",
         "statusBar.foreground": "#484b53"
     },
     "[jsonc]": {
