@@ -27,7 +27,7 @@ CapsLock | `<Esc>` | escape, recommend press 2 times, avoiding incorrect Capital
 gc | gcc | quick comment
 ga | `shift+alt+A` | quick toggle block comment, `shift+alt+A` still active
 ca | `ctrl+;` | quick insert semicolon(normal mode) at the end
-da | `ctrl+shift+;` | quick remove semicolon(normal mode) at the end
+dz | `ctrl+shift+;` | quick remove semicolon(normal mode) at the end
 , | - | quick add `,` after current char
 se | `<Esc>`,"b","v", "e" | **visual mode**, select current wordl
 sb | - | **visual mode**, toggle markdown set bold
